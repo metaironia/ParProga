@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 
     if (size != 2) {
         if (rank == 0) {
-            fprintf(stderr, "Ошибка: требуется ровно 2 процесса.\n");
+            fprintf(stderr, "Ошибка: требуется ровно 2 узла.\n");
         }
         MPI_Finalize();
         return 1;
